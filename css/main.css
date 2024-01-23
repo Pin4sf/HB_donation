@@ -807,4 +807,8 @@ a.fa:hover {
     .letters{
         font-size: 30px;
     }
+    #myImage{
+        height: 196px;
+        width: 270px;
+    }
 }
