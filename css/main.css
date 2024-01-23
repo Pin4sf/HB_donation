@@ -40,15 +40,15 @@ body {
     margin-left: 1em
 }
 
+
 #myimage {
     opacity: 0;
-    border: 3px solid rgba(255, 255, 255, 0.2);
     box-sizing: border-box;
     /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
     filter: gray; /* IE5+ */
-    border-radius: 100%;
     -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
     -webkit-transition: all .5s ease-in;
+    padding-bottom: 50px;
 }
 
 #myimage:hover {

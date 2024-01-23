@@ -73,7 +73,7 @@ define(['jquery',
                 directionalLight.position.set(500, 2000, 0);
                 scene.add(directionalLight);
 
-                pointLight = new THREE.PointLight(0xff4400, 1.5);
+                pointLight = new THREE.PointLight(0x0C18C3, 1.5);
                 pointLight.position.set(-1000, -1000, -200);
                 scene.add(pointLight);
 
@@ -397,7 +397,7 @@ define(['jquery',
             function animateAbout() {
                 if (!aboutVisible) {
                     aboutVisible = true;
-                    document.getElementById("email-to").style.display = 'none';
+                    document.getElementById("visit-to").style.display = 'none';
                     document.getElementById("nav-projects").style.display = 'none';
                     $('#nav-about').text("Close");
                     animAboutReveal =  anime.timeline({
@@ -460,7 +460,7 @@ define(['jquery',
                         easing: "easeOutExpo",
                         duration: 500,
                         complete: function(){
-                            document.getElementById("email-to").style.display = 'block';
+                            document.getElementById("visit-to").style.display = 'block';
                             document.getElementById("nav-projects").style.display = 'block';
                         }
                     })
@@ -473,7 +473,7 @@ define(['jquery',
                     animateAbout();
                 if (!projectsVisible) {
                     projectsVisible = true;
-                    document.getElementById("email-to").style.display = 'none';
+                    document.getElementById("visit-to").style.display = 'none';
                     document.getElementById("nav-about").style.display = 'none';
                     $('#nav-projects').text("Close");
                     animStartupReveal = anime.timeline({
@@ -533,7 +533,7 @@ define(['jquery',
                     if(animStartupReveal != null)
                         animStartupReveal.seek(animStartupReveal.duration);
                     projectsVisible = false;
-                    $('#nav-projects').text("MY STARTUP");
+                    $('#nav-projects').text("VISIT US");
                     anime.timeline({
                         loop: false,
                         complete: function() {}
@@ -571,7 +571,7 @@ define(['jquery',
                         easing: "easeOutExpo",
                         duration: 700,
                         complete: function(){
-                            document.getElementById("email-to").style.display = 'block';
+                            document.getElementById("visit-to").style.display = 'block';
                             document.getElementById("nav-about").style.display = 'block';
                         }
                     }).add({
