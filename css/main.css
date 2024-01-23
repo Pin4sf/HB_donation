@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Monoton|Raleway:500|Bitter:400,700|Raleway|Lora:400,700,700i');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
 @font-face {
     font-family: LeagueSpartan;
     font-weight: bold;
@@ -10,7 +12,7 @@ body {
     color: #999;
     padding: 0;
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
     font-family: georgia;
     font-size: 1em;
     text-align: center;
@@ -257,7 +259,7 @@ body {
 /*#snappy-H1_3*/
 
 #greeting-hello {
-    font: normal normal 700 normal 48px Bitter;
+    font: normal normal 700 normal 48px 'Cedarville Cursive';
 }
 
 #greeting-look {
@@ -270,7 +272,7 @@ body {
     padding-top: 0.2em;
     padding-right: 0.05em;
     padding-bottom: 0.1em;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .letters {
@@ -280,6 +282,7 @@ body {
 
 .about-anim {
     opacity: 0;
+
 }
 
 #about-me {
@@ -287,7 +290,7 @@ body {
     box-sizing: border-box;
     color: #A9A9A9;
     height: 70px;
-    width: 42%;
+    width: 82%;
     letter-spacing: 0.5px;
     text-rendering: geometricPrecision;
     font: normal normal 400 normal 14px / 10px Raleway;
@@ -300,8 +303,9 @@ body {
 
 #recog-exp {
     box-sizing: border-box;
+    margin-top: 20px;
     font: normal normal 400 normal 16px / 16px Raleway;
-    margin: 5% 0px 2px;
+    display: flex;
 }
 
 /*#snappy-DIV_12*/
@@ -327,7 +331,7 @@ body {
 /*#snappy-H3_14*/
 
 #recog-list {
-    font: normal normal 400 normal 16px / 16px Raleway;
+    font: normal normal 400 normal 25px / 25px Raleway;
     list-style: none outside none;
     margin: 0px;
     padding: 0px;
@@ -343,14 +347,13 @@ body {
     border: 0px none rgb(106, 106, 106);
     font-family: 'Raleway', sans-serif;
     font-size: 13px;
-    padding-top: 3px;
     list-style: none outside none;
 }
 
 /*#snappy-LI_16, #snappy-LI_17, #snappy-LI_19*/
 
 #experience-container {
-    float: left;
+    float: left;-
     box-sizing: border-box;
     font: normal normal 400 normal 16px / 16px Raleway;
 }
@@ -396,8 +399,8 @@ body {
 /*#snappy-DIV_27*/
 
 #social-links {
-    margin: 0px;
-    padding: 0px;
+    margin-top: 50px;
+    padding-top: 50px;
 }
 
 /*#snappy-UL_28*/
@@ -474,7 +477,7 @@ body {
 /*#snappy-DIV_2*/
 
 #nav-about {
-
+    
 }
 
 /*#snappy-H3_4*/
@@ -557,6 +560,7 @@ body {
     position: absolute;
     opacity: 0;
     transition: all 0.3s ease 0s;
+    margin-top: 3rem;
 }
 
 .nav-item{
@@ -751,10 +755,56 @@ a.fa:hover {
     color: #FF5A16;
 }
 
+.visiit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .white-span{
     color: #ffffff;
 }
 ::-webkit-scrollbar {
     width: 0px;  /* remove scrollbar space */
     background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+@media screen and (max-width: 1003px) {
+    .line{
+        display: none;
+    }
+    #myImage{
+        -webkit-filter: grayscale(0);
+    }
+}
+
+@media screen and (max-width:552px) {
+    #myImage{
+        height: 300px;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #recognition-container {
+        display: none;
+    }
+    h1#greeting-hello{
+        font-size: 40px;
+    }
+    p.quote{
+        font-size: 13.7px;
+    }
+    h1.header-text{
+        display: none;
+    }
+    h2#greeting-look{
+        font-size: 13.7px;
+    }
+    div.startup-links{
+        margin-top: 0px;
+    }
+    .letters{
+        font-size: 30px;
+    }
 }
