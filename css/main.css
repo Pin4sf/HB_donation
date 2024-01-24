@@ -293,7 +293,7 @@ body {
     width: 82%;
     letter-spacing: 0.5px;
     text-rendering: geometricPrecision;
-    font: normal normal 400 normal 14px / 10px Raleway;
+    font: normal normal 400 normal 17px / 10px Raleway;
     margin: 0px;
     margin-top: 25px;
     line-height: 16.5pt;
@@ -337,6 +337,17 @@ body {
     padding: 0px;
 }
 
+#menu{
+    margin-bottom: 3rem;
+}
+
+div.col p{
+    letter-spacing: 0.5px;
+    text-rendering: geometricPrecision;
+    font: normal normal 400 normal 17px / 10px Raleway;
+    line-height: 16.5pt;
+}
+
 /*#snappy-UL_15*/
 
 #recog-list li {
@@ -346,7 +357,7 @@ body {
     text-rendering: geometricPrecision;
     border: 0px none rgb(106, 106, 106);
     font-family: 'Raleway', sans-serif;
-    font-size: 13px;
+    font-size: 17px;
     list-style: none outside none;
 }
 
@@ -385,7 +396,7 @@ body {
     text-rendering: geometricPrecision;
     border: 0px none rgb(106, 106, 106);
     font-family: 'Raleway', sans-serif;
-    font-size: 13px;
+    font-size: 17px;
     padding-top: 3px;
     list-style: none outside none;
 }
@@ -401,17 +412,26 @@ body {
 #social-links {
     margin-top: 50px;
     padding-top: 50px;
+    padding-left: 0;
+}
+
+#social-links-container ul{
+    display: flex;
+    flex-direction: column;
 }
 
 /*#snappy-UL_28*/
+
+.stick{
+    font: normal normal 400 normal 16px / 16px Raleway;
+}
 
 #social-links-container ul li {
     cursor: pointer;
     display: inline-block;
     letter-spacing: 0.5px;
     list-style: none outside none;
-    margin: 0px 10px 0px 0px;
-    padding: 0px 0px 2px;
+    margin: 10px 10px 0px 0px;
     transition: opacity 0.3s ease 0s;
 }
 
@@ -561,6 +581,7 @@ body {
     opacity: 0;
     transition: all 0.3s ease 0s;
     margin-top: 3rem;
+    margin-bottom: 4rem;
 }
 
 .nav-item{
@@ -789,6 +810,9 @@ a.fa:hover {
     #recognition-container {
         display: none;
     }
+    #exp-list li{
+        font-size: 13px;
+    }
     h1#greeting-hello{
         font-size: 40px;
     }
@@ -810,5 +834,14 @@ a.fa:hover {
     #myImage{
         height: 196px;
         width: 270px;
+    }
+    #about-me{
+        font: normal normal 400 normal 14px / 10px Raleway;
+        letter-spacing: 0.5px;
+    text-rendering: geometricPrecision;
+    line-height: 14.5pt;
+    }
+    #menu{
+        margin-bottom: 30px;
     }
 }
