@@ -338,7 +338,24 @@ body {
 }
 
 #menu{
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#box1{
+    padding-top: 30px;
+    margin-top: 20px;
+}
+
+#box2{
+    padding-top: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 div.col p{
@@ -592,12 +609,24 @@ div.col p{
     transition: all 0.3s ease 0s;
 }
 
+
+
 .nav-item:hover {
     opacity: 1.0;
     transform: scale(1.1);
 }
 
-.nav-bottom h3,
+.nav-bottom h3 {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    letter-spacing: 2px;
+    text-decoration: none solid rgb(255, 255, 255);
+    text-rendering: geometricPrecision;
+    border: 0px none rgb(255, 255, 255);
+    font: normal normal 700 normal 17px / 12px Raleway;
+    outline: rgb(255, 255, 255) none 0px;
+}
+
 .nav-bottom a {
     color: rgb(255, 255, 255);
     cursor: pointer;
@@ -605,9 +634,26 @@ div.col p{
     text-decoration: none solid rgb(255, 255, 255);
     text-rendering: geometricPrecision;
     border: 0px none rgb(255, 255, 255);
-    font: normal normal 700 normal 11px / 11px Raleway;
+    font: normal normal 700 normal 16px / 12px Raleway;
     outline: rgb(255, 255, 255) none 0px;
 }
+
+.nav-bottom a :hover, #btn:hover{
+    background-color: rgba(47,106,224,0.8);
+ }
+
+#btn{
+    background-color: transparent;
+    border: #fff solid;
+    height: 50px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+ 
 
 .header-text{
     font-family: 'Bitter', serif;
@@ -840,8 +886,5 @@ a.fa:hover {
         letter-spacing: 0.5px;
     text-rendering: geometricPrecision;
     line-height: 14.5pt;
-    }
-    #menu{
-        margin-bottom: 30px;
     }
 }
