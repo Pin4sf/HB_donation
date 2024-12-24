@@ -38,7 +38,7 @@ export function BackgroundText() {
                         transform: `translate(${mousePos.x}px, ${mousePos.y}px)`,
                     }}
                 >
-                    HACKBYTE
+                    HACKBYTE 
                 </motion.div>
             ))}
         </>
