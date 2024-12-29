@@ -63,7 +63,7 @@ define(['jquery',
 
                 scene = new THREE.Scene();
                 scene.background = new THREE.Color(0x050505);
-                scene.fog = new THREE.Fog(0x050505, 2000, 4000);
+                scene.fog = new THREE.Fog(0xffffff, 2000, 4000);
 
                 // LIGHTS
 
@@ -73,7 +73,7 @@ define(['jquery',
                 directionalLight.position.set(500, 2000, 0);
                 scene.add(directionalLight);
 
-                pointLight = new THREE.PointLight(0x0C18C3, 1.5);
+                pointLight = new THREE.PointLight(0xFF0020, 1.5);
                 pointLight.position.set(-1000, -1000, -200);
                 scene.add(pointLight);
 

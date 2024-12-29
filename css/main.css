@@ -50,7 +50,7 @@ body {
     filter: gray; /* IE5+ */
     -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
     -webkit-transition: all .5s ease-in;
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
 }
 
 #myimage:hover {
@@ -111,9 +111,10 @@ body {
 .ml5 .text-wrapper {
     position: relative;
     display: inline-block;
-    padding-right: 0.05em;
-    padding-bottom: 0.15em;
+    /* padding-right: 0.05em; */
+    /* padding-bottom: 0.15em; */
     line-height: 1em;
+
 }
 
 .ml5 .line {
@@ -645,12 +646,13 @@ div.col p{
 #btn{
     background-color: transparent;
     border: #fff solid;
-    height: 50px;
+    height: 35px;
     width: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 40px;
 }
 
  
