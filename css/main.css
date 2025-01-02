@@ -23,7 +23,7 @@ body {
     position: absolute;
     width: 100%;
     margin: auto;
-    top: 25%;
+    top: 13%;
 }
 
 
@@ -51,6 +51,7 @@ body {
     -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
     -webkit-transition: all .5s ease-in;
     /* padding-bottom: 50px; */
+    height: 400px;
 }
 
 #myimage:hover {
@@ -348,11 +349,11 @@ body {
 
 #box1{
     padding-top: 30px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 #box2{
-    padding-top: 60px;
+    padding-top: 50px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -589,7 +590,7 @@ div.col p{
 .nav-bottom{
     z-index: 100021;
     height: 40px;
-    bottom: 0px;
+    bottom: 30px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -839,9 +840,6 @@ a.fa:hover {
 }
 
 @media screen and (max-width: 1003px) {
-    .line{
-        display: none;
-    }
     #myImage{
         -webkit-filter: grayscale(0);
     }
@@ -855,6 +853,9 @@ a.fa:hover {
 }
 
 @media screen and (max-width: 768px) {
+        .line{
+        display: none;
+    }
     #recognition-container {
         display: none;
     }
@@ -880,8 +881,8 @@ a.fa:hover {
         font-size: 30px;
     }
     #myImage{
-        height: 196px;
-        width: 270px;
+        width: 90vw;
+        
     }
     #about-me{
         font: normal normal 400 normal 14px / 10px Raleway;

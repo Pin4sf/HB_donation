@@ -274,7 +274,7 @@ define(['jquery',
                 var delta = clock.getDelta();
                 if (firstTime) {
                     png.onload = drawScene;
-                    png.src = "./images/circle-colored-200.png"
+                    png.src = "./images/hackbyte3_logo.svg"
                     firstTime = false;
                 }
                 if (terrain.visible) {
